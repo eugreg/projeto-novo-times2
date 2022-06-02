@@ -2,14 +2,18 @@
 
 <template>
   <header>
-    <span class="texto-header">Home</span>
-    <span class="separador">|</span>
-    <span class="texto-header">Jogadores</span>
-    <span class="separador">|</span>
-    <span class="texto-header">Times</span>
+    <div class="menu-esquerdo">
+      <span><RouterLink to="/">Home</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/times">Times</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/jogadores">Jogadores</RouterLink></span>
+    </div>
+    <div class="menu-dieito">
+      <span>Sair</span>
+    </div>
   </header>
-  <main>Main</main>
-  <footer>Rodapé</footer>
+  <RouterView />
 </template>
 
 <style>
@@ -23,6 +27,9 @@
 
   font-weight: normal;
 }
+a {
+  color: inherit;
+}
 
 header,
 footer {
@@ -33,6 +40,7 @@ footer {
   display: flex;
   align-items: center;
   padding-left: 1.5rem;
+  justify-content: space-between;
 }
 
 header span {
