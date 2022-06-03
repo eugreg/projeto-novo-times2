@@ -1,19 +1,12 @@
-<script></script>
+<script setup>
+import HeaderComp from "./components/template/HeaderComp.vue";
+import FoterComp from "./components/template/FoterComp.vue";
+</script>
 
 <template>
-  <header>
-    <div class="menu-esquerdo">
-      <span><RouterLink to="/">Home</RouterLink></span>
-      <span>|</span>
-      <span><RouterLink to="/times">Times</RouterLink></span>
-      <span>|</span>
-      <span><RouterLink to="/jogadores">Jogadores</RouterLink></span>
-    </div>
-    <div class="menu-dieito">
-      <span>Sair</span>
-    </div>
-  </header>
+  <HeaderComp />
   <RouterView />
+  <FoterComp />
 </template>
 
 <style>
@@ -29,23 +22,13 @@
 }
 a {
   color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  border: solid #000000 0.5px;
 }
 
-header,
-footer {
-  background-color: black;
-  height: 10%;
-  font-size: 1.3rem;
-  color: white;
-  display: flex;
-  align-items: center;
-  padding-left: 1.5rem;
-  justify-content: space-between;
-}
 
-header span {
-  padding: 0 10px;
-}
 
 main {
   min-height: 80%;
