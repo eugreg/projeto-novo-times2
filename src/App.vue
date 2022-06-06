@@ -5,7 +5,9 @@ import FoterComp from "./components/template/FoterComp.vue";
 
 <template>
   <HeaderComp />
+  <main>
   <RouterView />
+  </main>
   <FoterComp />
 </template>
 

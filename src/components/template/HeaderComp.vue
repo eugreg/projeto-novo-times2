@@ -1,18 +1,16 @@
 <template>
-  <div>
-    <header>
-      <div class="menu-esquerdo">
-        <span><RouterLink to="/">Home</RouterLink></span>
-        <span>|</span>
-        <span><RouterLink to="/times">Times</RouterLink></span>
-        <span>|</span>
-        <span><RouterLink to="/jogadores">Jogadores</RouterLink></span>
-      </div>
-      <div class="menu-dieito">
-        <span>Sair</span>
-      </div>
-    </header>
-  </div>
+  <header>
+    <div class="menu-esquerdo">
+      <span><RouterLink to="/">Home</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/times">Times</RouterLink></span>
+      <span>|</span>
+      <span><RouterLink to="/jogadores">Jogadores</RouterLink></span>
+    </div>
+    <div class="menu-dieito">
+      <span>Sair</span>
+    </div>
+  </header>
 </template>
 <style>
 header span {
@@ -28,5 +26,4 @@ header {
   padding-left: 1.5rem;
   justify-content: space-between;
 }
-
 </style>
